@@ -13,13 +13,13 @@ const Advice = () => {
             .catch((error) => {
             console.log(error)
         })
-    })
+    }, [])
   return (
       <div className='Advice' >
           
           <div className='Advice-Card' >
               <h1>{advice} </h1>
-              <button className='Advice-button' onClick={setAdvice(data.slip)} >Click for Advice</button>
+              <button className='Advice-button'  >Click for Advice</button>
           </div>
     </div>
   )
